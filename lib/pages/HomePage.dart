@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
-import 'Phone.dart';
+import 'ClBuilderPageView.dart';
 import 'Search.dart';
 import 'Me.dart';
-
+import 'Phone.dart';
+import 'ClPageView.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pages = new List()..add(Home())..add(Me())..add(Search())..add(Phone());
+    _pages = new List()..add(Home())..add(Me())..add(ClBuilderPageView())..add(ClPageView())..add(Phone());
   }
 
   @override
@@ -58,6 +59,11 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: Colors.red,
             icon: Icon(Icons.search),
             title: Text("搜搜"),
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Colors.red,
+            icon: Icon(Icons.phone),
+            title: Text("通讯"),
           ),
           BottomNavigationBarItem(
             backgroundColor: Colors.red,
