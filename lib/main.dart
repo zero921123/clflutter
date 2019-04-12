@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'TabPages/HomePage.dart';
+import 'JBZJ/JBZJ.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,13 +7,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5), //按钮被点击的高量颜色
         splashColor: Colors.blue, //点击按钮的博文颜色
         primarySwatch: Colors.green,
       ),
-      home: HomePage(),
+      home: JbzjDemo(),
 
     );
   }
