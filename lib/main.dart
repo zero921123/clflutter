@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'JBZJ/JBZJ.dart';
+import 'pages/HomePage.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.blue, //点击按钮的博文颜色
         primarySwatch: Colors.green,
       ),
-      home: JbzjDemo(),
+      home: HomePage(),
 
     );
   }
