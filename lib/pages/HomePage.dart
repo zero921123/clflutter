@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'Phone.dart';
 import 'Search.dart';
-import 'Me.dart';
+import 'RxDartDemo.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pages = new List()..add(Home())..add(Me())..add(Search())..add(Phone());
+    _pages = new List()..add(Home())..add(RxDartDemo())..add(Search())..add(Phone());
   }
 
   @override

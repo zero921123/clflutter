@@ -13,7 +13,6 @@ class  SearchState extends State <Search> {
        child: Center(
          child: ListView.builder(
            itemCount: 20,
-          //  itemExtent: 2.0,
            itemBuilder: (BuildContext context,int index){
              return ListTile(
                leading: Icon(Icons.add),
@@ -25,8 +24,23 @@ class  SearchState extends State <Search> {
                subtitle: Text("subtitle ${index}",style: TextStyle(
                  color: Colors.green,
                  wordSpacing: 12.0,
-                 fontWeight: FontWeight.bold
+                 fontWeight: FontWeight.bold,
                ),),
+               selected: true,
+               onTap: (){
+                 showBottomSheet(
+                   context: context,
+                   builder: (context){
+                     return Container(
+                       height: 50.0,
+                       child: Row(
+                         children: <Widget>[Chip(label: Icon(Icons.adb),)
+                         ,Chip(label: Icon(Icons.adb),),Chip(label: Icon(Icons.adb),)],
+                       ),
+                     );                   }
+                 );
+               },
+               
              );
            },
          )

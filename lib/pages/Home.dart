@@ -25,44 +25,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ListView.builder(
-        itemCount: _list.length,
-        itemBuilder: (context, index) {
-          Data data = _list[index];
-          return Container(
-            width: 300.0,
-            height: 400.0,
-            decoration: BoxDecoration(
-                color: Colors.red,
-                border: Border.all(color: Colors.green, width: 3.0)),
-            child: Stack(
-              children: <Widget>[
-                Positioned(
-                  left: 10.0,
-                  top: 10.0,
-                  height: 100.0,
-                  width: 100.0,
-                  child: Text("sss"),
-                ),
-                Positioned(
-                  height: 100.0,
-                  width: 100.0,
-                  left: 10.0,
-                  bottom: 10.0,
-                  child: Text(data.gender),
-                ),
-                Positioned(
-                  height: 100.0,
-                  width: 100.0,
-                  right: 10.0,
-                  top: 10.0,
-                  child: Text(data.age),
-                ),
-              ],
-            ),
-          );
-        },
-      ),
+      child: Container()
     );
   }
 }
