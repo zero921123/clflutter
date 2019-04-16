@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/HomePage.dart';
 import 'pages/Home.dart';
-import 'pages/Phone.dart';
-import 'pages/search.dart';
-import 'pages/RxDartDemo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,9 +18,7 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       initialRoute: "/",
       routes: {
-        "/":(context)=>HomePage(),
-        "/home":(context)=>Home(),
-        "/Rx":(context)=>RxDartDemo()
+        "/":(context)=>Home(),
       },
 
     );
